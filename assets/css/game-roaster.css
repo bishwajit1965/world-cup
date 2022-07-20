@@ -13,6 +13,7 @@ body {
   list-style: none;
 }
 :root {
+  --bg-deep-dark: #000;
   --bg-dark: #161616;
   --white-color: #fff;
   --light-grey: #f7f7f7;
@@ -31,7 +32,7 @@ body {
   margin: 2rem 0rem;
 }
 .header-wrapper {
-  background-color: #000;
+  background-color: var(--bg-deep-dark);
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -131,6 +132,12 @@ a.blog-btn:hover {
   border-radius: 0.7rem;
   height: 13rem;
 }
+.image-gallery-box img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
 .image-gallery-box {
   display: flex;
   grid-template-columns: repeat(3, 1fr);
@@ -148,8 +155,16 @@ div.game-description {
   text-align: center;
 }
 
-/* 
-====================== */
+/* View all button styles
+========================= */
+.view-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 4rem;
+  display: none;
+}
 
 /* Footer area styles 
 ======================*/
@@ -182,7 +197,8 @@ div.game-description {
 }
 
 hr.footer-hr {
-  border: 0.01rem solid var(--green);
+  border: 0.1rem solid var(--bg-dark);
+  background-color: #353232;
   border-radius: 10px;
 }
 

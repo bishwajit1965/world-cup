@@ -12,6 +12,7 @@ body {
   text-decoration: none;
   list-style: none;
 }
+
 :root {
   --bg-dark: #161616;
   --white-color: #fff;
@@ -22,6 +23,10 @@ body {
   --border-thin: #f4f4f4;
   --green: #008000;
 }
+html {
+  font-size: 100%;
+}
+
 /* Header area styles
 ===================== */
 .header {
@@ -30,6 +35,7 @@ body {
   align-items: center;
   margin: 2rem 0rem;
 }
+
 .header-wrapper {
   background-color: #000;
   width: 90%;
@@ -38,6 +44,7 @@ body {
   align-items: center;
   border-radius: 1.5rem;
 }
+
 .header-title {
   color: var(--white-color);
   padding: 3rem;
@@ -78,8 +85,8 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 1%;
-  width: 100%;
 }
+
 /* Aside (Left-menu) section styles
 =================================== */
 .left-menu {
@@ -93,6 +100,7 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+
 .left-menu a {
   margin: 1rem 0.5rem;
   padding: 0.8rem;
@@ -102,6 +110,7 @@ body {
   font-weight: 700;
   text-align: center;
 }
+
 a.blog-btn {
   margin: 1rem 0.5rem;
   padding: 0.8rem;
@@ -111,6 +120,7 @@ a.blog-btn {
   font-weight: 700;
   text-align: center;
 }
+
 a.blog-btn:hover {
   background-image: linear-gradient(to right, var(--bg-red), var(--bg-yellow));
   transform: rotate(-180deg);
@@ -126,19 +136,26 @@ a.blog-btn:hover {
   justify-content: space-between;
   gap: 1rem;
 }
+
 .game-posts {
   border: 1px solid var(--border-thin);
   border-radius: 0.7rem;
 }
-div.image-gallery {
+.image-gallery img {
   width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: auto;
 }
+
 div.game-description {
   padding: 0.5rem;
 }
+
 div.transfer-link {
   margin: 0.5rem;
 }
+
 .middle-contents .game-posts .image-gallery .gallery-link {
   outline: 0.1rem solid var(--grey);
   padding: 0.1rem 0.5rem;
@@ -148,12 +165,20 @@ div.transfer-link {
 .bottom-icons {
   margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
+
 .bottom-icons span.icons {
   margin: 0rem 0.5rem 0rem 0rem;
 }
-
-/* 
-====================== */
+/* View all button styles
+========================= */
+.view-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 4rem;
+  display: none;
+}
 
 /* Footer area styles 
 ======================*/
@@ -166,6 +191,7 @@ div.transfer-link {
   padding: 6rem 0rem;
   background-color: var(--bg-dark);
 }
+
 .footer .top-area h1 {
   color: var(--white-color);
   font-weight: 700;
@@ -186,7 +212,8 @@ div.transfer-link {
 }
 
 hr.footer-hr {
-  border: 0.01rem solid var(--green);
+  border: 0.1rem solid var(--bg-dark);
+  background-color: #353232;
   border-radius: 10px;
 }
 
