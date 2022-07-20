@@ -19,6 +19,8 @@ body {
   --grey: #b9b9b9;
   --bg-red: #ff0000;
   --bg-yellow: #ffff00;
+  --border-thin: #f4f4f4;
+  --green: #008000;
 }
 /* Header area styles
 ===================== */
@@ -110,20 +112,20 @@ a.blog-btn {
   text-align: center;
 }
 a.blog-btn:hover {
-  background-image: linear-gradient(to right, var(--bg-red), yellow);
+  background-image: linear-gradient(to right, var(--bg-red), var(--bg-yellow));
 }
+
 /* Middle content styles
 ======================== */
 .middle-contents {
   width: 69.5%;
-  /* background-color: #808000; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   gap: 1rem;
 }
 .game-posts {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-thin);
   border-radius: 0.7rem;
 }
 div.image-gallery {
@@ -144,6 +146,10 @@ div.transfer-link {
 .bottom-icons {
   margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
+.bottom-icons span.icons {
+  margin: 0rem 0.5rem 0rem 0rem;
+}
+
 /* Footer area styles 
 ======================*/
 .footer {
@@ -172,14 +178,10 @@ div.transfer-link {
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 2rem 0rem;
 }
 
 hr.footer-hr {
-  background-color: #000;
-  /* margin-top: 5px solid var(--grey); */
-  /* border-top: 0.1rem solid #000; */
-  border: 1px solid #0d59a06e;
+  border: 0.01rem solid var(--green);
   border-radius: 10px;
 }
 
