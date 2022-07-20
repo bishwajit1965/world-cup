@@ -119,37 +119,33 @@ a.blog-btn:hover {
 
 /* Middle content styles
 ======================== */
-.middle-contents {
+.middle-contents-box {
   width: 69.5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   gap: 1rem;
 }
-.game-posts {
+.game-posts-box {
   border: 1px solid var(--border-thin);
   border-radius: 0.7rem;
+  height: 13rem;
 }
-div.image-gallery {
+.image-gallery-box {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  padding: 2rem 2rem;
 }
 div.game-description {
-  padding: 0.5rem;
-}
-div.transfer-link {
-  margin: 0.5rem;
-}
-.middle-contents .game-posts .image-gallery .gallery-link {
-  outline: 0.1rem solid var(--grey);
-  padding: 0.1rem 0.5rem;
-  border-radius: 0.3rem;
-}
-
-.bottom-icons {
-  margin: 0rem 0.5rem 0.5rem 0.5rem;
-}
-.bottom-icons span.icons {
-  margin: 0rem 0.5rem 0rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  text-align: center;
 }
 
 /* 
