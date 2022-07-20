@@ -1,0 +1,190 @@
+/* Google font Poppins
+====================== */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Global styles
+================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --bg-dark: #161616;
+  --white-color: #fff;
+  --light-grey: #f7f7f7;
+  --grey: #b9b9b9;
+  --bg-red: #ff0000;
+  --bg-yellow: #ffff00;
+}
+/* Header area styles
+===================== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+.header-wrapper {
+  background-color: #000;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+.header-title {
+  color: var(--white-color);
+  padding: 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.header-title h1 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+
+.header-title p {
+  margin: 1rem 0rem;
+}
+
+.btn-width {
+  width: 10rem;
+}
+
+.header-banner img {
+  height: 39rem;
+  padding: 0rem 3rem 0rem 0rem;
+  margin-bottom: -0.45rem;
+}
+
+/* Main contents area styles
+============================ */
+.main-contents {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0rem;
+}
+/* Contents wrapper contents styles
+=================================== */
+.contents-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 1%;
+  width: 100%;
+}
+/* Aside (Left-menu) section styles
+=================================== */
+.left-menu {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 19.5%;
+  padding: 1rem;
+  background-color: aquamarine;
+  height: fit-content;
+  background-color: var(--bg-dark);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.left-menu a {
+  margin: 1rem 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--white-color);
+  color: var(--bg-dark);
+  font-weight: 700;
+  text-align: center;
+}
+a.blog-btn {
+  margin: 1rem 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--bg-red);
+  color: var(--white-color);
+  font-weight: 700;
+  text-align: center;
+}
+a.blog-btn:hover {
+  background-image: linear-gradient(to right, var(--bg-red), yellow);
+}
+/* Middle content styles
+======================== */
+.middle-contents {
+  width: 69.5%;
+  /* background-color: #808000; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 1rem;
+}
+.game-posts {
+  border: 1px solid #ccc;
+  border-radius: 0.7rem;
+}
+div.image-gallery {
+  width: 100%;
+}
+div.game-description {
+  padding: 0.5rem;
+}
+div.transfer-link {
+  margin: 0.5rem;
+}
+.middle-contents .game-posts .image-gallery .gallery-link {
+  outline: 0.1rem solid var(--grey);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.bottom-icons {
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
+}
+/* Footer area styles 
+======================*/
+.footer {
+  display: grid;
+  grid-template-rows: repeat(3, 3fr);
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  padding: 6rem 0rem;
+  background-color: var(--bg-dark);
+}
+.footer .top-area h1 {
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.top-area,
+.bottom-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr-rule {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+hr.footer-hr {
+  background-color: #000;
+  /* margin-top: 5px solid var(--grey); */
+  /* border-top: 0.1rem solid #000; */
+  border: 1px solid #0d59a06e;
+  border-radius: 10px;
+}
+
+.bottom-area a {
+  padding: 0rem 1.8rem;
+  color: var(--grey);
+  font-weight: 600;
+}
