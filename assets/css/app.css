@@ -218,9 +218,21 @@ hr.footer-hr {
   background-color: #353232;
   border-radius: 10px;
 }
-
+.bottom-area {
+  margin: 0rem 0rem 2rem 0rem;
+}
 .bottom-area a {
   padding: 0rem 1.8rem;
   color: var(--grey);
   font-weight: 600;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons a {
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  opacity: 0;
 }

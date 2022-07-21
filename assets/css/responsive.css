@@ -1,4 +1,7 @@
 @media only screen and (max-width: 668px) {
+  /* Mobile view media query
+  ************************** */
+
   /* Header area styles
     ====================== */
   * {
@@ -141,8 +144,15 @@
     font-size: 1.5rem;
   }
 
-  /* Game roaster media queries styles
-  ==================================== */
+  .social-icons a {
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    opacity: 0.9;
+  }
+
+  /* Game roaster view media query
+  ********************************/
   .middle-contents-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -151,9 +161,8 @@
     margin: auto;
   }
 }
-
-/* Tablet media query styles
-  ============================ */
+/* Tablet view media query
+  *************************/
 @media screen and (min-width: 669px) and (max-width: 992px) {
   .header-wrapper {
     display: grid;
