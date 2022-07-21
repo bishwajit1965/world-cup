@@ -179,7 +179,7 @@ div.transfer-link {
   align-items: center;
   height: 5rem;
   margin-bottom: 4rem;
-  display: none;
+  opacity: 0;
 }
 
 /* Footer area styles 

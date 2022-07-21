@@ -119,9 +119,6 @@
   .game-description p {
     font-size: 1.2rem;
   }
-  .view-all-btn {
-    display: ;
-  }
 
   /* Footer area styles
   ===================== */
@@ -216,6 +213,9 @@
   }
   .game-description p {
     font-size: 1.2rem;
+  }
+  .view-all-btn {
+    opacity: 0.9;
   }
 
   /* Game roaster media queries styles
