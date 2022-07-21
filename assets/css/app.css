@@ -70,14 +70,16 @@ html {
   height: 39rem;
   padding: 0rem 3rem 0rem 0rem;
   margin-bottom: -0.45rem;
+  background-position: center;
+  background-size: contain;
 }
 
 /* Main contents area styles
 ============================ */
 .main-contents {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  margin: 5rem 0rem;
+  margin: 5rem 0rem; */
 }
 /* Contents wrapper contents styles
 =================================== */
